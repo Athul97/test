@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins';
+}
+
+#do {
+    background: linear-gradient(to right, rgb(8, 241, 183) 0%, #020853 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.zoom {
+    /* padding: 50px; */
+    /* background-color: green; */
+    transition: transform .2s;
+    /* width: 200px;
+    height: 200px; */
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+.cardbtn {
+    margin-top: -70px;
+    margin-left: 50px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.centerclr {
+    height: 550px;
+    width: 100%;
+    background: #F5FFF7;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 270px;
+}
+
+.education {
+    height: 100%;
+    width: 70%;
+    background: rgb(236, 252, 239);
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education h1 {
+    margin-top: 5%;
+}
+
+.edubutton {
+    margin-bottom: 3%;
+    margin-right: 3%;
+    background-color: #1E3465;
+    height: 60px;
+}
+
+.books {
+    /* margin-left: 44%; */
+    margin-top: -150px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background: #09110B;
+    color: white;
+    position: absolute;
+    margin-top: 5%;
+}
