@@ -7,304 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="home.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-    <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Contacts</title>
+    <title>Home</title>
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        #contact {
-            width: 100%;
-            height: 100vh;
-            background-color: rgb(241, 240, 240);
-            overflow: hidden;
-            padding-bottom: 200px;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin: 0 auto;
-            padding-top: 50px;
-            margin-bottom: 50px;
-            font: 300 60px 'Oswald', sans-serif;
-            letter-spacing: 6px;
-            color: rgb(206, 87, 87);
-            margin-bottom: 25px;
-        }
-        
-        .contact-wrapper {
-            margin: 0 auto;
-            padding-top: 20px;
-            position: relative;
-            max-width: 800px;
-        }
-        /* Begin Left Contact Page */
-        
-        .form-horizontal {
-            float: left;
-            max-width: 400px;
-            font-family: 'Lato';
-            font-weight: 400;
-        }
-        /* .form-control,
-        textarea {
-            max-width: 400px;
-            background-color: #111;
-            color: #fff;
-            letter-spacing: 1px;
-        }
-        
-        .send-button {
-            margin-top: 15px;
-            height: 34px;
-            width: 400px;
-            overflow: hidden;
-            transition: all .2s ease-in-out;
-        }
-        
-        .button {
-            width: 400px;
-            height: 34px;
-            transition: all .2s ease-in-out;
-        }
-        
-        .send-text {
-            display: block;
-            margin-top: 10px;
-            font: 300 14px 'Lato', sans-serif;
-            letter-spacing: 2px;
-        }
-        
-        .button:hover {
-            transform: translate3d(0px, -29px, 0px);
+        /* .carousel {
+            background: #bad0e6;
+            margin-top: 20px;
         } */
-        /* Begin Right Contact Page */
         
-        .direct-contact-container {
-            max-width: 400px;
-            float: right;
-            margin-top: 5px;
-        }
-        /* Location, Phone, Email Section */
-        
-        .contact-list {
-            list-style-type: none;
-            margin-left: -30px;
-            padding-right: 20px;
-        }
-        
-        .list-item {
-            line-height: 4;
-            color: #aaa;
-        }
-        
-        .contact-text {
-            font: 300 18px 'Lato', sans-serif;
-            letter-spacing: 1.9px;
-            color: rgb(78, 78, 78);
-        }
-        
-        .place {
-            margin-left: 62px;
-        }
-        
-        .phone {
-            margin-left: 56px;
-        }
-        
-        .gmail {
-            margin-left: 53px;
-        }
-        
-        .contact-text a {
-            color: rgb(78, 78, 78);
-            text-decoration: none;
-            transition-duration: 0.2s;
-        }
-        
-        .contact-text a:hover {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-        /* Social Media Icons */
-        
-        .social-media-list {
-            position: relative;
-            font-size: 2.3rem;
+        .carousel-item {
             text-align: center;
-            width: 100%;
+            min-height: 250px;
+            /* Prevent carousel from being distorted if for some reason image doesn't load */
         }
         
-        .social-media-list li a {
-            color: #fff;
-        }
-        
-        .social-media-list li {
-            position: relative;
-            top: 0;
-            left: -20px;
-            display: inline-block;
-            height: 70px;
-            width: 70px;
-            margin: 10px auto;
-            line-height: 70px;
-            border-radius: 50%;
-            color: #fff;
-            background-color: rgb(27, 27, 27);
-            cursor: pointer;
-            transition: all .2s ease-in-out;
-        }
-        
-        .social-media-list li:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 70px;
-            height: 70px;
-            line-height: 70px;
-            border-radius: 50%;
-            opacity: 0;
-            /* box-shadow: 0 0 0 1px #fff; */
-            box-shadow: 0 0 0 1px rgb(253, 124, 124);
-            transition: all .2s ease-in-out;
-        }
-        
-        .social-media-list li:hover {
-            background-color: #fff;
-        }
-        
-        .social-media-list li:hover:after {
-            opacity: 1;
-            transform: scale(1.12);
-            transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-        }
-        
-        .social-media-list li:hover a {
-            color: #111;
-        }
-        
-        .copyright {
-            font: 200 14px 'Oswald', sans-serif;
-            color: #555;
-            letter-spacing: 1px;
-            text-align: center;
-        }
-        
-        hr {
-            border-color: rgba(255, 152, 152, 0.8);
-            ;
-        }
-        /* Begin Media Queries*/
-        
-        @media screen and (max-width: 760px) {
-            #contact {
-                height: 1000px;
-            }
-            .section-header {
-                font-size: 65px;
-            }
-            .direct-contact-container,
-            .form-horizontal {
-                float: none;
-                margin: 10px auto;
-            }
-            .direct-contact-container {
-                margin-top: 60px;
-                max-width: 300px;
-            }
-            .social-media-list li {
-                height: 60px;
-                width: 60px;
-                line-height: 60px;
-            }
-            .social-media-list li:after {
-                width: 60px;
-                height: 60px;
-                line-height: 60px;
-            }
-        }
-        
-        @media screen and (max-width: 569px) {
-            #contact {
-                height: 1200px;
-            }
-            .section-header {
-                font-size: 50px;
-            }
-            .direct-contact-container,
-            .form-wrapper {
-                float: none;
-                margin: 0 auto;
-            }
-            .form-control,
-            textarea {
-                max-width: 340px;
-                margin: 0 auto;
-            }
-            .name,
-            .email,
-            textarea {
-                width: 280px;
-            }
-            .direct-contact-container {
-                margin-top: 60px;
-                max-width: 280px;
-            }
-            .social-media-list {
-                left: 0;
-            }
-            .social-media-list li {
-                height: 55px;
-                width: 55px;
-                line-height: 55px;
-                font-size: 2rem;
-            }
-            .social-media-list li:after {
-                width: 55px;
-                height: 55px;
-                line-height: 55px;
-            }
-        }
-        
-        @media screen and (max-width: 410px) {
-            .send-button {
-                width: 99%;
-            }
-        }
-        
-        .footer {
-            height: 250px;
-            width: 100%;
-            background: #09110B;
-            color: white;
-            position: absolute;
-            margin: 0px;
+        .bs-example {
+            margin: 50px;
         }
     </style>
-
-
 
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow ">
         <a class="navbar-brand text-warning" href="#">Life Excellence</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -313,99 +43,202 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active text-warning" style="margin-right: 50px;" href="home.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="about.html">About</a>
+                <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="">About</a>
                 <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="https://thelifeexcellence.blogspot.com ">Blog</a>
-                <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="contact.html">Contact</a>
+                <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="">Contact</a>
 
             </div>
         </div>
     </nav>
 
-    <section id="contact">
+    <div class="row homescreen">
+        <div class="col-md-12">
+            <img src="image/lander_img.png" class="img-fluid" alt="Responsive image">
 
-        <h1 class="section-header">CONTACT</h1>
+        </div>
+    </div>
+    <div class="do">
+        #elavateyourlife
+    </div>
 
-        <div class="contact-wrapper">
-
-            <!---------------- 
-      
-            CONTACT PAGE LEFT 
-          
-            ----------------->
-            <div class="form-horizontal">
-                <img src="image/225.jpg" alt="" class="img-fluid">
-            </div>
-
-            <!-- <form class="form-horizontal" role="form" method="post" action="contact.php">
-
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
-                    </div>
-                </div>
-
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-              <div class="button">
-                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-              </div>
-            
-            </button>
-
-            </form> -->
-
-            <!---------------- 
-      
-            CONTACT PAGE RIGHT 
-          
-            ----------------->
-
-            <div class="direct-contact-container">
-
-                <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">#############</span></i></li>
-
-                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:Y" title="Give me a call">***********</a></span></i></li>
-
-                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">me@gmail.com</a></span></i></li>
-
-                </ul>
-
-                <hr>
-                <ul class="social-media-list">
-                    <li>
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="contact-icon">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-                <hr>
-
-                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
-            </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-1"></div>
+        <div class="col-md-8 col-sm-10 justify">
+            <p>
+                Lorem amet incididunt pariatur amet aliquip enim non tempor nisi ullamco commodo. Ex magna anim quis officia. Laborum ullamco non laborum reprehenderit aliqua culpa nisi officia incididunt ut. Et quis ex exercitation dolore esse ad officia ea ut non cupidatat
+                officia do. Labore nostrud proident veniam culpa laboris. Aute fugiat officia exercitation velit nulla aliqua in laboris elit fugiat Lorem. Incididunt dolor qui id mollit mollit officia commodo occaecat aute duis voluptate qui dolore.</p>
+            <p>
+                Ipsum pariatur culpa pariatur ullamco occaecat excepteur cupidatat mollit dolore adipisicing incididunt non. Id qui cupidatat commodo ex consectetur adipisicing. Non fugiat deserunt voluptate cupidatat sunt dolor fugiat voluptate exercitation velit eiusmod.</p>
+            <p> Nulla adipisicing deserunt adipisicing consequat laboris est tempor reprehenderit magna. Laboris ea voluptate pariatur quis commodo. Magna exercitation nostrud deserunt eiusmod nisi nostrud ad voluptate. Sit in occaecat eiusmod nulla veniam.
+                Officia irure occaecat ad sunt velit. Sit fugiat minim magna ullamco officia occaecat dolor magna proident et.Velit amet aliquip cupidatat consequat est consequat minim. Laborum cillum consectetur reprehenderit sunt magna.
+            </p>
+            <p> Deserunt cupidatat eiusmod sint nulla pariatur elit qui Lorem laborum nulla labore. Sit excepteur sint sint Lorem enim excepteur tempor id fugiat reprehenderit laboris incididunt. Laboris veniam est quis incididunt. Pariatur ipsum duis consectetur
+                consequat velit consequat mollit qui aliquip. Aute dolore nisi irure ut dolor ex et voluptate nisi laborum quis esse incididunt.
+            </p>
 
         </div>
 
-    </section>
+    </div>
+
+    <!---- Provide Start ---->
+    <div class="justify">
+        <h2>What we provide?</h2>
+    </div>
+
+    <div class="row" style="margin-bottom: 5%; margin-top: 5%;">
+        <div class="col-md-2"></div>
+        <div class="col-md-10" style="margin: auto;">
+            <div class="row">
+                <div class="col-md-6 marauto">
+                    <h2>
+                        Coaching
+                    </h2>
+                    <p>People want to grow, develop and progress in their life. </p>
+                    <p> Wouldn’t it be excellent? if someone enlighten you to <br> elevate your potential and develop yourself!</p>
+                    <p> Coaching is a collaborative partnership of creating such <br> wonderful states in life .</p>
+                </div>
+                <div class="col-md-6 marauto">
+                    <img src="image/Coaching.png" alt="Responsive image" class="img-fluid" style="height: 300px; width: 300px; margin: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row" style="margin-bottom: 5%; margin-top: 5%;">
+        <div class="col-md-2"></div>
+        <div class="col-md-10" style="margin: auto;">
+            <div class="row">
+
+                <div class="col-md-6" style="margin: auto;">
+                    <img src="image/Idea.png" alt="Responsive image" class="img-fluid" style="height: 300px; width: 300px; margin: auto;">
+                </div>
+
+                <div class="col-md-6" style="margin: auto;">
+                    <h2>
+                        Ideas
+                    </h2>
+                    <p>People want to grow, develop and progress in their life. </p>
+                    <p> Wouldn’t it be excellent? if someone enlighten you to <br> elevate your potential and develop yourself!</p>
+                    <p> Coaching is a collaborative partnership of creating such <br> wonderful states in life .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row" style="margin-bottom: 5%; margin-top: 5%;">
+        <div class="col-md-2"></div>
+        <div class="col-md-10 marauto">
+            <div class="row">
+                <div class="col-md-6 marauto">
+                    <h2>
+                        Approaches
+                    </h2>
+                    <p>People want to grow, develop and progress in their life. </p>
+                    <p> Wouldn’t it be excellent? if someone enlighten you to <br> elevate your potential and develop yourself!</p>
+                    <p> Coaching is a collaborative partnership of creating such <br> wonderful states in life .</p>
+                </div>
+                <div class="col-md-6 marauto">
+                    <img src="image/Approach.png" alt="Responsive image" class="img-fluid" style="height: 300px; width: 350px; margin: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row" style="margin-bottom: 5%; margin-top: 5%;">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-6 marauto">
+                    <img src="image/Decision.png" alt="Responsive image" class="img-fluid" style="height: 300px; width: 350px; margin: auto;">
+                </div>
+                <div class="col-md-6 marauto">
+                    <h2>
+                        Decision
+                    </h2>
+                    <p>People want to grow, develop and progress in their life. </p>
+                    <p> Wouldn’t it be excellent? if someone enlighten you to <br> elevate your potential and develop yourself!</p>
+                    <p> Coaching is a collaborative partnership of creating such <br> wonderful states in life .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---- Provide Ends ---->
+
+
+    <!---- Customer Says Start ---->
+
+    <div class="row">
+        <div class="col-md-12 customerdiv">
+            <div class="col-md-12 justify">
+                <h2>What our customers say</h2>
+                <hr style="width: 150px; margin: auto;">
+            </div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/Ellipse (1).png" alt="First Slide" style="width: 100px; height: 100px;">
+                        <h5>First slide label</h5>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Ellipse.png" alt="Second Slide" style="width: 100px; height: 100px;">
+                        <h5>Second slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Ellipse (2).png" alt="Third Slide" style="width: 100px; height: 100px;">
+                        <h5>third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!---- Customer Ends ---->
+
+
+    <!---- Feedback Starts ---->
+
+
+    <div class="justify">
+        <h2>Tell us what you think</h2>
+    </div>
+
+    <div class="row" style="margin-bottom: 5%; margin-top: 5%;">
+        <div class="col-md-6" style="margin-bottom: 10%;">
+            <img src="image/feedback_img.png" alt="Responsive image" class="img-fluid mx-auto d-block" style=" width: 270px; height: 192px;">
+        </div>
+        <div class="col-md-6">
+            <form action="" style="margin-left: 10%;">
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Drop your feedback here" style="width:80%;"></textarea>
+                    <button class="btn" style="font-size: 18px;">Send &nbsp;<i class="material-icons" style="font-size: 16px;">&#xe163;</i></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!---- Feedback Ends ---->
+
+
     <footer class="footer">
         <div class="row">
             <div class="col-md-12" style="margin-left: 0%; margin-top: 10px;">
@@ -418,24 +251,19 @@
                 <br> ***************
                 <br> *********
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md" style="margin-left: 10px;">
                 <h5>CONTACT US</h5>
                 info@lifeexellence.com<br> 180005231
             </div>
-            <!-- <div class="col-6 col-md">
-                <h5>About</h5>
-                ************<br> **************
-                <br> **********
-
-            </div> -->
         </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
