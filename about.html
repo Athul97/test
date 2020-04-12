@@ -17,28 +17,35 @@
 
 <body>
 
-    <head>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow ">
-            <a class="navbar-brand text-warning" href="#">Life Excellence</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow ">
+        <a class="navbar-brand text-body" href="#" style="margin-left: 5%;"><b>Life Excellence</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon "></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active text-warning" style="margin-right: 50px;" href="home.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="about.html">About</a>
-                    <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="https://thelifeexcellence.blogspot.com ">Blog</a>
-                    <a class="nav-item nav-link text-warning" style="margin-right: 50px;" href="contact.html">Contact</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="index.html">Home</a>
+                <a class="nav-item nav-link active text-success" style="margin-right: 50px;" href="about.html">About<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="https://thelifeexcellence.blogspot.com ">Blog</a>
+                <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="contact.html">Gallery</a>
+                <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="contact.html">Contact</a>
 
-                </div>
             </div>
-        </nav>
-    </head>
+        </div>
+    </nav>
+
+    <div class="row homescreen">
+        <div class="col-12">
+            <img src="image/lander_img.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+    </div>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 .d-none .d-md-block .d-lg-none"></div>
-            <div class="col-md-4" style="text-align: center;">
-                <p id="do">What i do?</p>
+            <div class="col-md-4" style="text-align: center; margin-top: 2%; margin-bottom: 2%;">
+                <p class="do">What i do?</p>
             </div>
             <div class="col-md-4"></div>
         </div>
@@ -46,7 +53,7 @@
         <!---Cards Start --->
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-3 zoom">
+            <div class="col-md-3 zoom mobile3">
                 <div class="card" style="width: 18rem; border-color: #5DC46F;">
                     <img class="card-img-top" src="image/Rectangle 14.png" alt="Card image cap">
                     <div class="card-body">
@@ -57,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 zoom">
+            <div class="col-md-3 zoom mobile3">
                 <div class="card" style="width: 18rem; border-color: #5DC46F;">
                     <img class="card-img-top" src="image/Rectangle 14.png" alt="Card image cap">
                     <div class="card-body">
@@ -72,7 +79,7 @@
 
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-3 zoom">
+            <div class="col-md-3 zoom mobile3">
                 <div class="card" style="width: 18rem; border-color: #5DC46F;">
                     <img class="card-img-top" src="image/Rectangle 14.png" alt="Card image cap">
                     <div class="card-body">
@@ -83,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 zoom">
+            <div class="col-md-3 zoom mobile3">
                 <div class="card" style="width: 18rem; border-color: #5DC46F;">
                     <img class="card-img-top" src="image/Rectangle 14.png" alt="Card image cap">
                     <div class="card-body">
@@ -100,27 +107,29 @@
         <!---Cards Ends --->
 
         <!--Education Starts-->
-        <div class="row centerclr">
+        <div class="row centerclr mobile">
             <!-- <center> -->
-            <div class="row education">
+            <div class="row education mobile">
                 <!-- <h1>Education</h1> -->
                 <div class="row" style="margin-left: 8%; margin-right: 5%;">
                     <form>
                         <center>
                             <h1>Education</h1>
                         </center>
-                        <button type="button" class="btn btn-dark edubutton">Coach certification <br>from CCA</button>
-                        <button type="button" class="btn btn-dark edubutton">MSc Psychology<br></button>
-                        <button type="button" class="btn btn-dark edubutton">MBA<br></button>
-                        <button type="button" class="btn btn-dark edubutton">MA philosophy <br> and religion</button>
-                        <button type="button" class="btn btn-dark edubutton">BSc Physics<br></button>
-                        <!-- &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -->
-                        <button type="button" class="btn btn-dark edubutton">
+                        <div class="edubtn">
+                            <button type="button" class="btn btn-dark edubutton">Coach certification <br>from CCA</button>
+                            <button type="button" class="btn btn-dark edubutton">MSc Psychology<br></button>
+                            <button type="button" class="btn btn-dark edubutton">MBA<br></button>
+                            <button type="button" class="btn btn-dark edubutton">MA philosophy <br> and religion</button>
+                            <button type="button" class="btn btn-dark edubutton">BSc Physics<br></button>
+                            <!-- &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -->
+                            <button type="button" class="btn btn-dark edubutton">
                                 <!-- &nbsp; -->
                                  PGDCTA &nbsp;<br></button>
-                        <button type="button" class="btn btn-dark edubutton">&nbsp; ITIL(2011) &nbsp;<br></button>
-                        <button type="button" class="btn btn-dark edubutton">CBT(Cognitive <br> behaviour therapy)</button>
-                        <button type="button" class="btn btn-dark edubutton">NLP (Neuro Linguistic<br> Programming)</button>
+                            <button type="button" class="btn btn-dark edubutton">&nbsp; ITIL(2011) &nbsp;<br></button>
+                            <button type="button" class="btn btn-dark edubutton">CBT(Cognitive <br> behaviour therapy)</button>
+                            <button type="button" class="btn btn-dark edubutton">NLP (Neuro Linguistic<br> Programming)</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -139,7 +148,7 @@
             </div>
         </div>
 
-        <div class="row" style="margin-top: -100px;">
+        <div class="row book2 mobile">
             <!-- <h1 class="books">BOOKS</h1> -->
             <div class="col-md-3"></div>
             <div class="col-md-3">
@@ -157,24 +166,23 @@
             <div class="col-md-3"></div>
         </div>
         <!--Books End-->
-        <footer class="footer">
-            <div class="row">
-                <div class="col-md-12" style="margin-left: 0%; margin-top: 10px;">
-                    <img class="mb-2" src="" alt="" width="24" height="24"> &nbsp; &nbsp; &nbsp;Life Excellence
-                    <small class="d-block mb-3 text-muted">&nbsp; &nbsp; &nbsp; &nbsp; © 2020</small>
-                </div>
-                <div class="col-6 col-md" style="margin-left: 2%;">
-                    <h5>About</h5>
-                    **********<br> ***************
-                    <br> ***************
-                    <br> *********
-                </div>
-                <div class="col-6 col-md" style="margin-left: 10px;">
-                    <h5>CONTACT US</h5>
-                    info@lifeexellence.com<br> 180005231
-                </div>
+        <div class="row footer">
+            <div class="col-md-12" style="margin-left: 0%; margin-top: 10px;">
+                <img class="mb-2" src="" alt="" width="24" height="24"> &nbsp; &nbsp; &nbsp;Life Excellence
+                <small class="d-block mb-3 text-muted">&nbsp; &nbsp; &nbsp; &nbsp; © 2020</small>
+                <hr class="new2">
             </div>
-        </footer>
+            <div class="col-6 col-md" style="margin-left: 2%;">
+                <h5>About</h5>
+                **********<br> ***************
+                <br> ***************
+                <br> *********
+            </div>
+            <div class="col-6 col-md" style="margin-left: 10px;">
+                <h5>Contact us</h5>
+                info@lifeexellence.com<br> 180005231
+            </div>
+        </div>
 
     </div>
 
