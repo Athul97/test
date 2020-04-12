@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<!-- <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'> -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        $("img").click(function() {
+            var t = $(this).attr("src");
+            $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
+            $("#myModal").modal();
+        });
+
+        $("video").click(function() {
+            var v = $("video > source");
+            var t = v.attr("src");
+            $(".modal-body").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");
+            $("#myModal").modal();
+        });
+    }); //EOF Document.ready
+</script>
+<style>
+    h1 {
+        font-family: Satisfy;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        padding: 1%;
+    }
+    
+    #gallery {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+    
+    .footer {
+        height: 250px;
+        width: 100%;
+        background: rgb(39, 48, 41);
+        color: white;
+        position: absolute;
+        margin: 0px;
+    }
+    
+    hr.new2 {
+        border: 1px solid rgb(235, 125, 125);
+        width: 100%;
+        float: left;
+        margin-top: -10px;
+    }
+    
+    @media (max-width:1200px) {
+        #gallery {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            /* -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px; */
+        }
+    }
+    
+    @media (max-width:800px) {
+        #gallery {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            /* -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px; */
+        }
+        .footer {
+            height: 315px;
+            width: 103%;
+            background: rgb(24, 37, 28);
+            color: white;
+            position: absolute;
+            margin: 0px;
+        }
+    }
+    
+    @media (max-width:600px) {
+        #gallery {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+    }
+    
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 4% auto;
+        box-shadow: -3px 5px 15px #000;
+        cursor: pointer;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    
+    .modal-img,
+    .model-vid {
+        width: 100%;
+        height: auto;
+    }
+    
+    .modal-body {
+        padding: 0px;
+    }
+</style>
+
+<body>
+    <!-- <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow ">
+            <a class="navbar-brand text-body" href="#" style="margin-left: 5%;"><b>Life Excellence</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active text-success" style="margin-right: 50px;" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="about.html">About</a>
+                    <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="https://thelifeexcellence.blogspot.com ">Blog</a>
+                    <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="gallery.html">Gallery</a>
+                    <a class="nav-item nav-link text-secondary" style="margin-right: 50px;" href="contact.html">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+
+    </header> -->
+
+
+    <h1>Image Gallery</h1>
+    <hr>
+    <div id="gallery" class="container-fluid">
+        <!-- <img src="https://i.ytimg.com/vi/TZiQK81Rjfw/maxresdefault.jpg" class="card img-responsive">
+        <img src="http://www.fwallpaper.net/wallpapers/H/I/hilary-duff-portrait_1920x1200.jpg" class="card img-responsive">
+        <img src="http://delbaz.persiangig.com/image/Portraits/Matt-Sayles-portrait-shot-in-Beverly-HillsNov-8-2008-kristen-stewart-2823602-1845-2560.jpg" class="card img-responsive"> -->
+        <video class="card vid" controls>
+        <source src="https://www.youtube.com/watch?v=thjVvXl8vwI" type="video/mp4">
+        </source>
+      </video>
+        <img src="https://pluspng.com/img-png/training-png-hd-images-classroom-training-1920.png" class="card img-responsive">
+        <img src="https://c0.wallpaperflare.com/preview/498/976/47/success-stairs-board-drawing.jpg" class="card img-responsive">
+        <img src="https://image.shutterstock.com/image-vector/wake-determination-go-bed-satisfaction-600w-287632421.jpg" class="card img-responsive">
+        <!-- <img src="http://hd.wallpaperswide.com/thumbs/megan_fox_portrait-t2.jpg" class="card img-responsive"> -->
+        <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card img-responsive">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card img-responsive">
+        <img src="https://st3.depositphotos.com/2454953/13542/i/1600/depositphotos_135426614-stock-photo-knowledge-skills-experience-word-cloud.jpg" class="card img-responsive">
+        <img src="https://img.freepik.com/free-vector/online-education-flat-concept-banners-web-page-with-certified-training-university-college-courses_1284-33094.jpg?size=626&ext=jpg" class="card img-responsive">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card img-responsive">
+        <img src="https://thumbs.dreamstime.com/b/iot-smart-technology-futuristic-industry-concept-engineer-use-augmented-mixed-virtual-reality-to-education-training-repairs-147686636.jpg" class="card img-responsive">
+        <img src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/company/discovery-space/discovery-space-learn-from-home-stage-yellow.jpg?wid=1920&fit=fit,1&qlt=85,0" class="card img-responsive">
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card img-responsive">
+
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <footer class="footer"> -->
+    <div class="row footer">
+        <div class="col-md-12" style="margin-left: 0%; margin-top: 10px;">
+            <img class="mb-2" src="" alt="" width="24" height="24"> &nbsp; &nbsp; &nbsp;Life Excellence
+            <small class="d-block mb-3 text-muted">&nbsp; &nbsp; &nbsp; &nbsp; © 2020</small>
+            <hr class="new2">
+        </div>
+        <div class="col-6 col-md" style="margin-left: 2%;">
+            <h5>About</h5>
+            **********<br> ***************
+            <br> ***************
+            <br> *********
+        </div>
+        <div class="col-6 col-md" style="margin-left: 10px;">
+            <h5>Contact us</h5>
+            info@lifeexellence.com<br> 180005231
+        </div>
+    </div>
+    <!-- </footer> -->
+
+</body>
+
+</html>
