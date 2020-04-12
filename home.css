@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins';
+    margin: auto;
 }
 
 .homescreen {
@@ -56,10 +57,17 @@ body {
 .footer {
     height: 250px;
     width: 100%;
-    background: #09110B;
+    background: rgb(39, 48, 41);
     color: white;
     position: absolute;
     margin: 0px;
+}
+
+hr.new2 {
+    border: 1px solid rgb(235, 125, 125);
+    width: 100%;
+    float: left;
+    margin-top: -10px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -67,11 +75,17 @@ body {
         margin-top: 12%;
     }
     .footer {
-        height: 300px;
-        width: 100%;
-        background: #09110B;
+        height: 315px;
+        width: 103%;
+        background: rgb(24, 37, 28);
         color: white;
         position: absolute;
         margin: 0px;
+    }
+    .mobile {
+        margin-left: 5%;
+    }
+    .mobile2 {
+        margin-left: 2%;
     }
 }
